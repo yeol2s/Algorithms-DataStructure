@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96546D6F2C33CE6F00E214FE /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96546D6E2C33CE6F00E214FE /* MergeSort.swift */; };
 		96625AB92C308ADF001E0BC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96625AB82C308ADF001E0BC5 /* AppDelegate.swift */; };
 		96625ABB2C308ADF001E0BC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96625ABA2C308ADF001E0BC5 /* SceneDelegate.swift */; };
 		96625ABD2C308ADF001E0BC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96625ABC2C308ADF001E0BC5 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96546D6E2C33CE6F00E214FE /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		96625AB52C308ADF001E0BC5 /* Algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96625AB82C308ADF001E0BC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96625ABA2C308ADF001E0BC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				96625ACD2C308FB8001E0BC5 /* BubbleSort.swift */,
 				96D9BE602C31C7EC00085227 /* SelectionSort.swift */,
 				9683C9D92C33148D000DB2A5 /* InsertionSort.swift */,
+				96546D6E2C33CE6F00E214FE /* MergeSort.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				96625AB92C308ADF001E0BC5 /* AppDelegate.swift in Sources */,
 				96625ABB2C308ADF001E0BC5 /* SceneDelegate.swift in Sources */,
 				9683C9DA2C33148D000DB2A5 /* InsertionSort.swift in Sources */,
+				96546D6F2C33CE6F00E214FE /* MergeSort.swift in Sources */,
 				96625ACE2C308FB8001E0BC5 /* BubbleSort.swift in Sources */,
 				96D9BE612C31C7EC00085227 /* SelectionSort.swift in Sources */,
 			);
