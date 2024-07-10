@@ -16,6 +16,7 @@
 		96625AC52C308AE0001E0BC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96625AC32C308AE0001E0BC5 /* LaunchScreen.storyboard */; };
 		96625ACE2C308FB8001E0BC5 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96625ACD2C308FB8001E0BC5 /* BubbleSort.swift */; };
 		9683C9DA2C33148D000DB2A5 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9683C9D92C33148D000DB2A5 /* InsertionSort.swift */; };
+		96CDE9DF2C3CF09700097381 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDE9DE2C3CF09700097381 /* QuickSort.swift */; };
 		96D9BE612C31C7EC00085227 /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9BE602C31C7EC00085227 /* SelectionSort.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		96625AC62C308AE0001E0BC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96625ACD2C308FB8001E0BC5 /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
 		9683C9D92C33148D000DB2A5 /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
+		96CDE9DE2C3CF09700097381 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		96D9BE602C31C7EC00085227 /* SelectionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSort.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 				96D9BE602C31C7EC00085227 /* SelectionSort.swift */,
 				9683C9D92C33148D000DB2A5 /* InsertionSort.swift */,
 				96546D6E2C33CE6F00E214FE /* MergeSort.swift */,
+				96CDE9DE2C3CF09700097381 /* QuickSort.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				96546D6F2C33CE6F00E214FE /* MergeSort.swift in Sources */,
 				96625ACE2C308FB8001E0BC5 /* BubbleSort.swift in Sources */,
 				96D9BE612C31C7EC00085227 /* SelectionSort.swift in Sources */,
+				96CDE9DF2C3CF09700097381 /* QuickSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
