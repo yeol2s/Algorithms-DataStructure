@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9628C01D2C3FAADF009610CB /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9628C01C2C3FAADF009610CB /* HeapSort.swift */; };
 		96546D6F2C33CE6F00E214FE /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96546D6E2C33CE6F00E214FE /* MergeSort.swift */; };
 		96625AB92C308ADF001E0BC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96625AB82C308ADF001E0BC5 /* AppDelegate.swift */; };
 		96625ABB2C308ADF001E0BC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96625ABA2C308ADF001E0BC5 /* SceneDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9628C01C2C3FAADF009610CB /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
 		96546D6E2C33CE6F00E214FE /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		96625AB52C308ADF001E0BC5 /* Algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96625AB82C308ADF001E0BC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +68,7 @@
 		96625AB72C308ADF001E0BC5 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
-				96625ACC2C308DAE001E0BC5 /* List */,
+				96625ACC2C308DAE001E0BC5 /* Sorting Algorithms */,
 				96625AB82C308ADF001E0BC5 /* AppDelegate.swift */,
 				96625ABA2C308ADF001E0BC5 /* SceneDelegate.swift */,
 				96625ABC2C308ADF001E0BC5 /* ViewController.swift */,
@@ -78,7 +80,7 @@
 			path = Algorithms;
 			sourceTree = "<group>";
 		};
-		96625ACC2C308DAE001E0BC5 /* List */ = {
+		96625ACC2C308DAE001E0BC5 /* Sorting Algorithms */ = {
 			isa = PBXGroup;
 			children = (
 				96625ACD2C308FB8001E0BC5 /* BubbleSort.swift */,
@@ -86,8 +88,9 @@
 				9683C9D92C33148D000DB2A5 /* InsertionSort.swift */,
 				96546D6E2C33CE6F00E214FE /* MergeSort.swift */,
 				96CDE9DE2C3CF09700097381 /* QuickSort.swift */,
+				9628C01C2C3FAADF009610CB /* HeapSort.swift */,
 			);
-			path = List;
+			path = "Sorting Algorithms";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +171,7 @@
 				96546D6F2C33CE6F00E214FE /* MergeSort.swift in Sources */,
 				96625ACE2C308FB8001E0BC5 /* BubbleSort.swift in Sources */,
 				96D9BE612C31C7EC00085227 /* SelectionSort.swift in Sources */,
+				9628C01D2C3FAADF009610CB /* HeapSort.swift in Sources */,
 				96CDE9DF2C3CF09700097381 /* QuickSort.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
