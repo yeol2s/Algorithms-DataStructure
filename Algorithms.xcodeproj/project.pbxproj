@@ -11,6 +11,7 @@
 		962507A52C44DB55007FE785 /* LinearSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962507A42C44DB55007FE785 /* LinearSearch.swift */; };
 		962507A72C44DE8F007FE785 /* HashSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962507A62C44DE8F007FE785 /* HashSearch.swift */; };
 		9628C01D2C3FAADF009610CB /* HeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9628C01C2C3FAADF009610CB /* HeapSort.swift */; };
+		962A08DC2C47724900FB4B6D /* FibonacciSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962A08DB2C47724900FB4B6D /* FibonacciSequence.swift */; };
 		96546D6F2C33CE6F00E214FE /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96546D6E2C33CE6F00E214FE /* MergeSort.swift */; };
 		96625AB92C308ADF001E0BC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96625AB82C308ADF001E0BC5 /* AppDelegate.swift */; };
 		96625ABB2C308ADF001E0BC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96625ABA2C308ADF001E0BC5 /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 		96625AC52C308AE0001E0BC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96625AC32C308AE0001E0BC5 /* LaunchScreen.storyboard */; };
 		96625ACE2C308FB8001E0BC5 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96625ACD2C308FB8001E0BC5 /* BubbleSort.swift */; };
 		9683C9DA2C33148D000DB2A5 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9683C9D92C33148D000DB2A5 /* InsertionSort.swift */; };
+		96985EFC2C48635D00B00907 /* PrimeNumberCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96985EFB2C48635D00B00907 /* PrimeNumberCheck.swift */; };
 		969968522C45A002000243A1 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969968512C45A002000243A1 /* BinarySearchTree.swift */; };
 		96CDE9DF2C3CF09700097381 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CDE9DE2C3CF09700097381 /* QuickSort.swift */; };
 		96D9BE612C31C7EC00085227 /* SelectionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9BE602C31C7EC00085227 /* SelectionSort.swift */; };
@@ -30,6 +32,7 @@
 		962507A42C44DB55007FE785 /* LinearSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearSearch.swift; sourceTree = "<group>"; };
 		962507A62C44DE8F007FE785 /* HashSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashSearch.swift; sourceTree = "<group>"; };
 		9628C01C2C3FAADF009610CB /* HeapSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapSort.swift; sourceTree = "<group>"; };
+		962A08DB2C47724900FB4B6D /* FibonacciSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciSequence.swift; sourceTree = "<group>"; };
 		96546D6E2C33CE6F00E214FE /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		96625AB52C308ADF001E0BC5 /* Algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algorithms.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96625AB82C308ADF001E0BC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +44,7 @@
 		96625AC62C308AE0001E0BC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96625ACD2C308FB8001E0BC5 /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
 		9683C9D92C33148D000DB2A5 /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
+		96985EFB2C48635D00B00907 /* PrimeNumberCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumberCheck.swift; sourceTree = "<group>"; };
 		969968512C45A002000243A1 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		96CDE9DE2C3CF09700097381 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		96D9BE602C31C7EC00085227 /* SelectionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionSort.swift; sourceTree = "<group>"; };
@@ -68,6 +72,15 @@
 			path = "Searching Algorithms";
 			sourceTree = "<group>";
 		};
+		962A08DA2C47714A00FB4B6D /* Basic Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				962A08DB2C47724900FB4B6D /* FibonacciSequence.swift */,
+				96985EFB2C48635D00B00907 /* PrimeNumberCheck.swift */,
+			);
+			path = "Basic Algorithms";
+			sourceTree = "<group>";
+		};
 		96625AAC2C308ADF001E0BC5 = {
 			isa = PBXGroup;
 			children = (
@@ -87,11 +100,12 @@
 		96625AB72C308ADF001E0BC5 /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
-				96625ACC2C308DAE001E0BC5 /* Sorting Algorithms */,
-				962507A12C44C1A8007FE785 /* Searching Algorithms */,
 				96625AB82C308ADF001E0BC5 /* AppDelegate.swift */,
 				96625ABA2C308ADF001E0BC5 /* SceneDelegate.swift */,
 				96625ABC2C308ADF001E0BC5 /* ViewController.swift */,
+				962A08DA2C47714A00FB4B6D /* Basic Algorithms */,
+				96625ACC2C308DAE001E0BC5 /* Sorting Algorithms */,
+				962507A12C44C1A8007FE785 /* Searching Algorithms */,
 				96625ABE2C308ADF001E0BC5 /* Main.storyboard */,
 				96625AC12C308AE0001E0BC5 /* Assets.xcassets */,
 				96625AC32C308AE0001E0BC5 /* LaunchScreen.storyboard */,
@@ -189,12 +203,14 @@
 				96625ABB2C308ADF001E0BC5 /* SceneDelegate.swift in Sources */,
 				9683C9DA2C33148D000DB2A5 /* InsertionSort.swift in Sources */,
 				962507A32C44C210007FE785 /* BinarySearch.swift in Sources */,
+				96985EFC2C48635D00B00907 /* PrimeNumberCheck.swift in Sources */,
 				969968522C45A002000243A1 /* BinarySearchTree.swift in Sources */,
 				962507A72C44DE8F007FE785 /* HashSearch.swift in Sources */,
 				96546D6F2C33CE6F00E214FE /* MergeSort.swift in Sources */,
 				962507A52C44DB55007FE785 /* LinearSearch.swift in Sources */,
 				96625ACE2C308FB8001E0BC5 /* BubbleSort.swift in Sources */,
 				96D9BE612C31C7EC00085227 /* SelectionSort.swift in Sources */,
+				962A08DC2C47724900FB4B6D /* FibonacciSequence.swift in Sources */,
 				9628C01D2C3FAADF009610CB /* HeapSort.swift in Sources */,
 				96CDE9DF2C3CF09700097381 /* QuickSort.swift in Sources */,
 			);
