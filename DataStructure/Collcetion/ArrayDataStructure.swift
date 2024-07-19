@@ -36,4 +36,109 @@
 
 import Foundation
 
+class ArrayDataStructure {
+    
+    // MARK: 빈 배열 생성
+    var nums: Array<Int> = []
+    // var nums: Array<Int>()
+    // var nums: [Int] = []
+    // var nums: [Int]()
+    
+    // MARK: 배열 요소 저장
+    var numbers = [1, 2, 3, 4, 5]
+    // var numbers = Array(1...45) // (범위연산자 사용) 1~45까지 숫자를 생성해서 배열에 넣음
+    
+    // MARK: 인덱스 범위로 요소 접근
+    // numbers[0..<2] // 첫 번째 요소(인덱스: 0)부터 두 번째 요소(인덱스 1)까지 포함
+    
+    // MARK: 특정 값으로 초기화된 배열을 생성
+    let array = [Int?](repeating: nil, count: 5) // 옵셔널 [Int?] 타입의 배열 생성 repeating: 배열의 모든 요소를 'nil'로 초기화, count: 배열의 크기 지정(5개의 요소)
+    // let array = [Int](repeating: 0, count 4) // 논옵셔널
+    
+    // MARK: 배열의 배열(2차원 배열, 다차원 배열)
+    var arrays = [[Int]]()
+    // arrays.append([1, 2, 3])
+    // arrays.append([4, 5, 6])
+    // print(arrays) // [[1, 2, 3], [4, 5, 6]]
+    
+    /*
+    // 2차원 배열의 선언과 초기화
+    var arrays: [[Int]] = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]
+    ]
+    
+    // 특정 요소에 접근
+    let element = arrays[1][2] // 2차원 배열의 두 번째 행, 세 번째 열의 요소에 접근([행],[열])
+    print(element) // 출력 : 6
+    */
+    
+    
+    // MARK: 배열의 접근
+    func arrayAccess() {
+        numbers[0] // 첫 번째 인덱스 접근
+        numbers[0] = 7 // 첫 번째 인덱스 요소 값 변경
+        
+        numbers.first // 0번 인덱스 요소 꺼내옴(복사)(옵셔널로 반환하고 비어있다면 nil 반환)
+        numbers.last // 마지막 인덱스 요소 꺼내옴(복사)(옵셔널 반환)
+        
+        numbers.startIndex // 시작 인덱스(항상 '0'이 나옴)
+        numbers.endIndex // 마지막 인덱스(배열 메모리 공간에서의 인덱스의 끝의 값. 실제 요소 요소 접근을 위해서는 'endIndex - 1' 을 해줘야함)
+        
+        numbers.index(1, offsetBy: 2) // 1번 인덱스부터 2만큼 떨어진 인덱스 -> 3번 인덱스
+        
+        numbers.firstIndex(of: 2) // 인덱스 앞부터 찾았을 때 정수 '2'는 몇번째 인덱스?(옵셔널)
+        numbers.lastIndex(of: 2) // 인덱스 뒤부터 찾았을 때 정수 '2'는 몇번째 인덱스?(옵셔널)
+        // firstIndex 사용 예)
+        if let index = numbers.firstIndex(of: 3) { // 특정 값의 인덱스를 찾고
+            numbers.remove(at: index) // 해당 인덱스의 요소 삭제 ('3' 삭제)
+        }
+    }
+    
+    // MARK: - 배열의 변경
+    func arrayChange() {
+        // 삽입(insert)
+        numbers.insert(3, at: 4) // 4번째 Index에 값 삽입(추가되는 것)(중간에 삽입하면 이후 값들은 인덱스가 뒤로 밀림)
+        numbers.insert(contentsOf: [0, 1, 2], at: 0) // contentsOf: 배열 형태로 삽입
+        
+        // 교체(replace)
+        numbers[0] = 7 // 해당 Index의 값 변경
+        numbers[0...2] = [5, 6, 7] // 범위 Index의 값 변경 (빈 배열 할당은 범위만큼 삭제)
+        numbers.replaceSubrange(0...2, with: [5, 6, 7]) // replaceSubrange(): 범위만큼 교체하는 함수
+        
+        // 추가(append)
+        numbers += [6] // 배열 마지막 끝에 추가
+        numbers.append(6) // 배열 마지막 끝에 추가
+        numbers.append(contentsOf: [6, 7, 8]) // 배열 마지막 끝에 배열형태로 추가(합쳐짐)
+        
+        // 삭제(remove)
+        numbers[0...2] = [] // 범위만큼 삭제(빈 배열)
+        numbers.remove(at: 3) // 해당 Index의 값 삭제
+        numbers.removeSubrange(0...2) // removeSubrange(): 범위 Index 만큼 삭제하는 함수
+        
+        // First, Last 인덱스 삭제(배열이 비어있는지 확인을 잘 해야함, 비어있는데 삭제를 한다면 에러 발생)
+        numbers.removeFirst() // 맨 앞 요소 삭제하고 삭제된 요소는 반환
+        numbers.removeFirst(2) // 맨 앞 2개 요소 삭제(반환 안함)(2번 Index가 아닌 2개를 삭제한다는 의미)
+        numbers.removeLast() // 맨 뒤 요소 삭제하고 삭제된 요소는 반환
+        numbers.removeLast(2) // 맨 뒤 요소 삭제(반환 안함)
+        
+        numbers.removeAll() // 배열 요소 모두 삭제
+        //numbers.removeAll(where: <#T##(Int) throws -> Bool#>) // 조건을 만족하는 모든 데이터 삭제((클로저)배열의 각 요소를 인자로 받아 Bool 반환 -> true를 반환하면 해당 요소가 삭제)
+        // numbers.removeAll { $0 == 3 } // 값이 3인 모든 요소 삭제
+        numbers.removeAll(keepingCapacity: true) // 메모리 공간에 저장공간은 일단 두고 데이터(요소)만 날림(메모리 공간을 유지하므로 추후 할당시에 더 빠르게 할당) keepingCapacity : 용량 유지
+    }
+
+
+    
+
+    
+    
+
+
+    
+    
+    
+}
+
 

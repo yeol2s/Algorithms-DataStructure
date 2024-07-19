@@ -102,7 +102,7 @@ func heapSort(_ array: inout [Int]) {
     // 1. 최대 힙을 구축(Max-Haep)
     // 배열의 중간 지점부터 시작하여 역순으로 heapify 함수를 호출(이 루프는 배열을 최대 힙으로 변환한다.)
     // * 중간 지점부터 시작하는 이유는 힙의 마지막 레벨의 자식 노드부터 시작하여 상위 노드로 올라가면서 힙 속성을 만족시키기 위함
-    for i in stride(from: n / 2 - 1, through: 0, by: -1) {
+    for i in stride(from: n / 2 - 1, through: 0, by: -1) { // stride : 'from 부터' ~ 'through 범위'까지 숫자를 진행하는데 'by: -1씩 감소(양수 2인 경우에는 건너뛴다는 의미)'
         heapify(&array, n, i)
     }
     
