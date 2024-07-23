@@ -94,6 +94,11 @@ class ArrayDataStructure {
         if let index = numbers.firstIndex(of: 3) { // 특정 값의 인덱스를 찾고
             numbers.remove(at: index) // 해당 인덱스의 요소 삭제 ('3' 삭제)
         }
+        
+        // MARK: '배열의 배열' 접근
+        // var arrays = [[1, 2, 3], [4, 5, 6]] // [[Int]]
+        // arrays[0][2] // 0번째 배열의 2번째 Index 접근 -> '3'
+
     }
     
     // MARK: - 배열의 변경
@@ -128,6 +133,44 @@ class ArrayDataStructure {
         // numbers.removeAll { $0 == 3 } // 값이 3인 모든 요소 삭제
         numbers.removeAll(keepingCapacity: true) // 메모리 공간에 저장공간은 일단 두고 데이터(요소)만 날림(메모리 공간을 유지하므로 추후 할당시에 더 빠르게 할당) keepingCapacity : 용량 유지
     }
+    
+    // MARK: - 배열의 기능
+    func arrayBasic() {
+        // MARK: 기본 기능
+        numbers.count // 요소의 개수
+        numbers.isEmpty // 요소가 비어있는지 여부(Bool)
+        numbers.contains(3) // 포함여부를 물어보는 함수(인자값으로 전달 -> Bool)
+        numbers.randomElement() // 요소중 랜덤으로 하나의 요소 추출(옵셔널)
+        numbers.swapAt(0, 1) // Index 값으로 두 요소의 값을 교환
+        
+        // MARK: 기타 기능
+        // 컬렉션에서 정렬 관련한 메서드의 이름이
+        // 동사 원형(sort(), reverse(), shuffle() 등)인 경우는 -> '직접적으로 요소의 값을 변경(리턴하지 않음)'
+        // 분사 형태(ing, ed)-(sorted(), reversed(), shuffled() 등)인 경우는 -> '직접 변환하지 않고 '배열'을 리턴함'
+        numbers.sort() // 배열을 오름차순으로 직접 정렬(배열 반환 안함)
+        numbers.sorted() // 배열을 오름차순으로 정렬 후 배열을 반환(원본 배열 유지)(배열 반환)
+        
+        numbers.reverse() // 배열을 역순으로 직접 정렬(배열 리턴 안함)
+        numbers.reversed() // 배열을 역순으로 정렬 후 배열을 반환(원본 유지)(배열 반환)
+        
+        numbers.sorted().reversed() // (체이닝) 배열을 오름차순 정렬 후 -> 역순으로 '읽을 수 있도록' 함(reversed()가 반환하는 타입은 'ReversedCollection' 타입으로 읽기만 가능하므로 실제 사용하려면 Array()로 감싸줘야 함)
+        
+        numbers.shuffle() // 배열 요소 위치 랜덤 변경(직접 변경)(배열 반환 안함)
+        numbers.shuffled() // 배열 요소 위치 랜덤 변경(원본 유지)(배열 반환)
+        
+        for i in numbers.enumerated() { // 배열 요소들을 네임드 튜플 형태로 한개씩 전달(offest: Index, element: 요소값)으로 전달
+            print("\(i.0), \(i.1)") // "\(i.offset), \(i.element)" 튜플에 접근하는 것
+        }
+//        for (index, number) in numbers.enumerated() { // 바로 뽑아서 튜플에 담기
+//            print("\(index), \(number)")
+//        }
+        
+        numbers.dropFirst() // 첫 번째 요소를 제거한 새로운 Sequence 타입을 반환(원본 유지), 정수의 경우 반환 타입은 'ArraySlice'이고 문자열 경우 반환 타입은 'Substring'으로 반환
+    }
+    
+    
+    
+
 
 
     

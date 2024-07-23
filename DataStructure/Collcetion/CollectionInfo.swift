@@ -34,3 +34,8 @@
     - 동사 원형(sort(), reverse(), shuffle() 등)인 경우는 -> '직접적으로 요소의 값을 변경(리턴하지 않음)'
     - 분사 형태(ing, ed)-(sorted(), reversed(), shuffled() 등)인 경우는 -> '직접 변환하지 않고 '배열'을 리턴함'
 */
+
+// MARK: - Collection 공통 메서드(고차함수)
+// Swift의 컬렉션 전체는 'Sequence' 및 'Collection' 프로토콜을 따르며 이로 인해 다양한 메서드를 제공받음
+
+
