@@ -166,22 +166,10 @@ class ArrayDataStructure {
 //        }
         
         numbers.dropFirst() // 첫 번째 요소를 제거한 새로운 Sequence 타입을 반환(원본 유지), 정수의 경우 반환 타입은 'ArraySlice'이고 문자열 경우 반환 타입은 'Substring'으로 반환
+        
+        // 배열에서 가장 큰 값, 작은 값 찾기(옵셔널로 반환)(min() : 가장 작은 값)
+        if let maxNumber = numbers.max() {}
     }
-    
-    
-    
-
-
-
-    
-
-    
-    
-
-
-    
-    
-    
 }
 
 
