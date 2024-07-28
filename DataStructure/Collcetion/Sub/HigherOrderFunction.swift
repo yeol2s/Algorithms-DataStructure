@@ -111,7 +111,50 @@ class HigherOrderFunction {
         // 1, 9, 25, 49, 81 ==> 결과 값 : 165
     }
     
-    // MARK: - 클로저의 (input)파라미터는 함수로 전달 가능 (클로저도 결국 함수니까)
-
+    // MARK: - (기타 고차함수) forEach, compactMap, flatMap
     
+    // MARK: forEach(각각의)(각각을 가지고 일을하고 끝냄, 반환 타입이 없음)
+    // 기존 배열 등의 각 아이템을 사용해서 각 아이템별로 작업을 실행(작업 방식은 클로저로 제공)
+    func forEachBasic() {
+        let numbersArray = [1, 2, 3, 4, 5, 6]
+        
+        numbersArray.forEach { num in
+            print(num) // 각각 번호를 출력하고 끝남 1, 2, 3, 4, 5, 6 을 하나씩 출력
+        }
+    }
+    
+    // MARK: - compactMap(map + 옵셔널 제거 새로운 배열 반환)
+    // 기존 배열 등의 각 아이템을 새롭게 매핑하면서 옵셔널 요소는 제거하고 새로운 배열 반환(옵셔널 바인딩 기능이 내장된 map - 옵셔널은 아예 제거해준다)
+    func compactMapBasic() {
+        let strArray: [String?] = ["A", nil, "B", nil, "C"]
+        
+        var newStrArray = strArray.compactMap { $0 } // nil은 제거되고, 옵셔널이 아닌 String 타입으로 요소들을 반환(if let 바인딩 내장)
+        
+        let numbersArray = [-2, -1, 0, 1, 2]
+        
+        var newNumbersArray = numbersArray.compactMap { $0 >= 0 ? $0 : nil } // (삼항연산자 사용) 음수는 nil 처리하여 nil은 제거시키므로 -> [0, 1, 2] 배열 반환(filter로도 구현가능한 부분))
+    }
+    
+    // MARK: - flatMap(플랫='평평'하게 매핑 - 중첩 배열 제거 후 배열 반환)
+    // (내부 중첩된 배열을 제거하고)중첩된 배열의 각 배열을 새롭게 매핑한다.(매핑방식은 클로저로 제공)
+    func flatMapBasic() {
+        let nestedArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9]] // 중첩 배열
+        
+        var newArray = nestedArray.flatMap { $0 } // 내부에 중첩된 배열 제거해서 하나의 배열로 반환 [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        
+        let nestedArray2 = [[[1, 2, 3], [4, 5, 6], [7, 8, 9]], [[10, 11], [12, 13, 14]]] // 3중 중첩 배열
+        
+        var newArray2 = nestedArray2
+            .flatMap{ $0 }
+            .flatMap{ $0 } // flatMap을 2번 사용하면 두번의 중첩이 벗겨짐 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    }
+    
+    // MARK: - 클로저의 (input)파라미터는 함수로 전달 가능 (클로저도 결국 함수니까)
+    
+    // 짝수인지 판별하는 함수
+//    func isEven(_ i: Int) -> Bool {
+//        return i % 2 == 0
+//    }
+//    
+//    let evens = arryIntData.filter(isEven) // 필터 함수 파라미터로 짝수 판별하는 함수 전달
 }
