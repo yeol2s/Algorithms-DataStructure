@@ -25,6 +25,7 @@
 		966A15DC2C496BC1003A0DA3 /* ArrayDataStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966A15DB2C496BC1003A0DA3 /* ArrayDataStructure.swift */; };
 		966A15DE2C496C71003A0DA3 /* CollectionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966A15DD2C496C71003A0DA3 /* CollectionInfo.swift */; };
 		9683C9DA2C33148D000DB2A5 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9683C9D92C33148D000DB2A5 /* InsertionSort.swift */; };
+		9690C0332C599B7D0062E37E /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9690C0322C599B7D0062E37E /* Stack.swift */; };
 		96985EFC2C48635D00B00907 /* PrimeNumberCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96985EFB2C48635D00B00907 /* PrimeNumberCheck.swift */; };
 		969968522C45A002000243A1 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969968512C45A002000243A1 /* BinarySearchTree.swift */; };
 		969977622C4E0F24007F08CC /* DictionaryDataStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969977612C4E0F24007F08CC /* DictionaryDataStructure.swift */; };
@@ -55,6 +56,7 @@
 		966A15DB2C496BC1003A0DA3 /* ArrayDataStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDataStructure.swift; sourceTree = "<group>"; };
 		966A15DD2C496C71003A0DA3 /* CollectionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionInfo.swift; sourceTree = "<group>"; };
 		9683C9D92C33148D000DB2A5 /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
+		9690C0322C599B7D0062E37E /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		96985EFB2C48635D00B00907 /* PrimeNumberCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumberCheck.swift; sourceTree = "<group>"; };
 		969968512C45A002000243A1 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		969977612C4E0F24007F08CC /* DictionaryDataStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDataStructure.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			children = (
 				96FBC8252C57FACF00E388A1 /* TupleDataStructure.swift */,
 				96FBC8272C5819A700E388A1 /* LinkedList.swift */,
+				9690C0322C599B7D0062E37E /* Stack.swift */,
 			);
 			path = ETC;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				962507A32C44C210007FE785 /* BinarySearch.swift in Sources */,
 				96985EFC2C48635D00B00907 /* PrimeNumberCheck.swift in Sources */,
 				969968522C45A002000243A1 /* BinarySearchTree.swift in Sources */,
+				9690C0332C599B7D0062E37E /* Stack.swift in Sources */,
 				96FBC8262C57FACF00E388A1 /* TupleDataStructure.swift in Sources */,
 				962507A72C44DE8F007FE785 /* HashSearch.swift in Sources */,
 				96546D6F2C33CE6F00E214FE /* MergeSort.swift in Sources */,
