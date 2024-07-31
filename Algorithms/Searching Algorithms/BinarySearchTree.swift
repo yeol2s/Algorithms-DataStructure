@@ -61,7 +61,7 @@
 
 import Foundation
 
-// 이진트리 자료구조(노드의 값을 저장하고, 왼쪽-오른쪽 자식 노드를 가리키는 속성을 가지는 이진 트리 구조 구성)
+// MARK: - 이진트리 자료구조(노드의 값을 저장하고, 왼쪽-오른쪽 자식 노드를 가리키는 속성을 가지는 이진 트리 구조 구성)
 class TreeNode<T: Comparable> {
     var value: T
     var leftChild: TreeNode?

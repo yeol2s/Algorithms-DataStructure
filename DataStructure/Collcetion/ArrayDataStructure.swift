@@ -127,6 +127,10 @@ class ArrayDataStructure {
         numbers.removeFirst(2) // 맨 앞 2개 요소 삭제(반환 안함)(2번 Index가 아닌 2개를 삭제한다는 의미)
         numbers.removeLast() // 맨 뒤 요소 삭제하고 삭제된 요소는 반환
         numbers.removeLast(2) // 맨 뒤 요소 삭제(반환 안함)
+        // 제거 및 옵셔널로 반환하는 메서드
+        // MARK: remove / pop 메서드는 배열의 상태에 따라 안전한 처리가 필요한 경우 'pop'을 사용하고 배열이 비어있지 않다는 것을 보장할 수 있을 때는 'remove' 메서드를 사용하는 것이 좋음.
+        // numbers.popFirst() // 배열의 첫 번째 요소를 제거하고 반환하는데 해당 요소를 옵셔널로 반환한다. (배열이 비어있는 경우 nil을 반환하므로 배열이 비어있어도 안전하게 호출 가능
+        // numbers.popLast() // 배열의 마지막 요소를 제거하고 해당 요소를 옵셔널 반환
         
         numbers.removeAll() // 배열 요소 모두 삭제
         //numbers.removeAll(where: <#T##(Int) throws -> Bool#>) // 조건을 만족하는 모든 데이터 삭제((클로저)배열의 각 요소를 인자로 받아 Bool 반환 -> true를 반환하면 해당 요소가 삭제)
